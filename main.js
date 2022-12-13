@@ -29,7 +29,7 @@ let tableInput = document.querySelector('#tableInfo');
 // Ingreso dinamico del nombre
 nameInput.addEventListener('input', ()=>{
     if(nameInput.value == ''){
-        nameCard.innerText = 'JANE APPLESEED'
+        nameCard.innerText = 'WILMER CACERES'
     }else{
         nameCard.innerText = nameInput.value;
     }
@@ -47,7 +47,6 @@ numberInput.addEventListener('input', ()=>{
     }else{
         // borrando espacios ingresados por el usuario, agregando espacios cada 4 digitos, y borrando el espacio final
         numberInput.value = numberInput.value.replace(/\s/g, '').replace(/([0-9]{4})/g, '$1 ').trim();
-        showError(numberInput, numberErrorDiv, '', false);
     }
 
     // Actualizando graficamente la tarjeta:
@@ -149,9 +148,8 @@ confirmBtn.addEventListener('click', event=>{
     if(nameValidation == true && numberValidation == true && monthValidation == true  && yearValidation == true  && cvcValidation == true){
         formSection.style.display = 'none';
         thanksSection.style.display = 'block';
-        console.log(typeof numberInput.value);
-        console.log(numberInput.value);
-        console.log(numberInput.value.length);
+        
+        
         let fragmento = `<tr>
         <td>**** **** **** ${numberInput.value.substr(15,4)}</td>
         <td>${nameInput.value}</td>

@@ -15,7 +15,6 @@ body {
   margin: auto;
 }
 .main-container__background-section {
-  background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
   height: 240px;
   position: relative;
@@ -23,15 +22,15 @@ body {
 .main-container__form-section {
   padding: 90px 24px 45px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .main-container {
-    width: 1440px;
+    width: 80%;
     display: flex;
   }
   .main-container__background-section {
-    background-image: url("../images/bg-main-desktop.png");
+
     width: 900px;
-    height: 900px;
+    height: 85vh;
   }
 }
 
@@ -49,19 +48,7 @@ body {
   z-index: 1;
   letter-spacing: 2px;
 }
-@media (min-width: 1440px) {
-  .card {
-    width: 450px;
-    height: 247px;
-    padding: 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .card {
-    top: 187px;
-    left: 167px;
-  }
-}
+
 .card__logo {
   width: 55px;
   margin-bottom: 30px;
@@ -75,19 +62,7 @@ body {
   justify-content: space-between;
   text-transform: uppercase;
 }
-@media (min-width: 1440px) {
-  .card__logo {
-    width: 86px;
-    margin-bottom: 55px;
-  }
-  .card__number {
-    font-size: 1.6em;
-    margin-bottom: 25px;
-  }
-  .card__details {
-    font-size: 0.8em;
-  }
-}
+
 
 .card-back {
   width: 288px;
@@ -102,32 +77,15 @@ body {
   left: 75px;
   letter-spacing: 2px;
 }
-@media (min-width: 1440px) {
-  .card-back {
-    width: 450px;
-    height: 247px;
-    padding: 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .card-back {
-    top: 468px;
-    left: 257px;
-  }
-}
+
+
 .card-back__cvc {
   font-size: 0.7em;
   margin-top: 50px;
   text-align: right;
   padding-right: 10px;
 }
-@media (min-width: 1440px) {
-  .card-back__cvc {
-    font-size: 1em;
-    margin-top: 80px;
-    padding-right: 30px;
-  }
-}
+
 
 .form__label {
   text-transform: uppercase;
@@ -174,15 +132,7 @@ body {
 .form__submit:hover, .thanks-section__button:hover {
   cursor: pointer;
 }
-@media (min-width: 1440px) {
-  .form {
-    margin-top: 180px;
-    width: 385px;
-  }
-  .form__input {
-    margin-bottom: 40px;
-  }
-}
+
 
 .error {
   color: hsl(0deg, 100%, 66%);
@@ -225,11 +175,7 @@ body {
   font-size: 1.1em;
   margin-bottom: 24px;
 }
-@media (min-width: 1440px) {
-  .thanks-section {
-    margin-top: 180px;
-  }
-}
+
 
 .attribution {
   font-size: 14px;
